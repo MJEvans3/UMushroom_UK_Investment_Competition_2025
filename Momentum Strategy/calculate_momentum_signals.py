@@ -14,7 +14,7 @@ from datetime import datetime, timedelta
 # Best for 7-week competition: 9.3% avg return, 3.27 Sharpe, 2.44 consistency (Rank #4)
 MOMENTUM_PERIOD = 14  # Optimal: 14 days
 NUM_TOP_STOCKS = 0.3  # Top 30% (15 stocks) - best risk-adjusted returns
-PORTFOLIO_VALUE = 100000  # £100k
+PORTFOLIO_VALUE = 60000  # £60k
 REBALANCE_FREQUENCY = 4  # Rebalance every 4 trading days
 
 # Top 50 S&P 500 stocks by market cap (as of 2024)
@@ -79,7 +79,7 @@ def get_current_momentum_signals():
 
     # Download data for all stocks
     # Need MOMENTUM_PERIOD + buffer for calculation
-    end_date = datetime.now()
+    end_date = datetime(2025, 10, 17)
     start_date = end_date - timedelta(days=MOMENTUM_PERIOD + 10)  # Extra days for weekends
 
     print(f"Downloading data from {start_date.date()} to {end_date.date()}...")

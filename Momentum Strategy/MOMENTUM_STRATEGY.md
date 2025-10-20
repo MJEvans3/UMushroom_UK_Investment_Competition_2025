@@ -1,4 +1,4 @@
-# Investment Competition Strategy
+# 65% of Investment Competition Strategy
 ## Momentum Portfolio Strategy - Complete Documentation
 **Competition Period:** October 10 - December 5, 2025 (8 weeks)
 
