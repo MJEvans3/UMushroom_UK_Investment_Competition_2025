@@ -3,6 +3,113 @@
 
 ---
 
+## **MASTER TRIGGER REFERENCE CARD**
+
+**Print this and keep it visible:**
+
+### **Amundi VIX ETF Rules (Most Important)**
+```
+BUY TRIGGERS:
+• VIX < 16 with major event <10 days → Enter at 3-5%
+• VIX < 14 → Maximum 5%
+
+SELL TRIGGERS (NON-NEGOTIABLE):
+• VIX > 30 → EXIT 100% IMMEDIATELY
+• Amundi VIX ETF gain > 40% → EXIT 100%
+• VIX > 25 AND event passed → EXIT 75%
+
+HOLD PERIOD:
+• Maximum 2-3 days before events
+• Exit immediately after event
+• Never hold >1 week (contango decay)
+```
+
+### **WisdomTree Physical Gold Rules**
+```
+BUY TRIGGERS:
+• CPI >3.0% YoY AND DXY drops >1% → Scale to 10%
+• Real yields negative (10Y < CPI) → Scale to 10%
+• Geopolitical escalation + gold up >2% → Scale to 10%
+
+SELL TRIGGERS:
+• Fed turns very dovish (>50bps cuts) → Reduce to 6%
+• DXY rallies >2% sustained → Reduce to 6%
+```
+
+### **WisdomTree Enhanced Commodity Rules**
+```
+BUY TRIGGERS:
+• OPEC+ cuts >500k b/d → Deploy 4%
+• WTI oil >$85 sustained 2 days → Deploy 4%
+
+SELL TRIGGERS:
+• China PMI <48 for 2 consecutive months → EXIT 100%
+• ISM Manufacturing <45 → EXIT 100%
+• WTI oil <$80 → EXIT 100%
+```
+
+### **WisdomTree Short EUR Long USD Rules**
+```
+BUY TRIGGERS:
+• NFP >200k jobs AND DXY rallies → Add 4%
+• Fed hawkish surprise → Add 4%
+• Geopolitical shock + DXY rally → Add 2-3%
+• DXY breaks >100 → Add 4%
+
+SELL TRIGGERS:
+• Fed confirms dovish cuts → EXIT 100%
+• DXY breaks <96 → EXIT 100%
+```
+
+### **iMGP DBi Managed Futures / AQR Managed Futures Rules**
+```
+BUY TRIGGERS:
+• CPI surprise >0.4% MoM → Scale AQR to 9%
+• Core PCE >2.8% → Scale iMGP to 12%
+• S&P 500 drawdown >4% in 3 days → Scale iMGP to 12%
+• VIX spike >22 → Scale iMGP to 12%
+
+SELL TRIGGERS:
+• Stop-loss at -8% from peak (rarely used)
+• Competition end (hold through Dec 5)
+```
+
+---
+
+## **CRITICAL REMINDERS**
+
+1. **T+1 Settlement**: Orders placed today execute tomorrow
+   - Last meaningful order day: **Thursday Dec 4**
+   - Friday Dec 5: Can only watch
+
+2. **Amundi VIX ETF Discipline**: 
+   - VIX >30 = EXIT immediately
+   - Gain >40% = EXIT immediately
+   - Never hold >3-5 days
+   - Only position 2-3 days before events
+
+3. **Major Events (UK Time)**:
+   - Oct 24: CPI (1:30 PM BST - position Oct 22)
+   - Oct 28-29: FOMC (7:00 PM GMT - position Oct 25)
+   - Nov 13: CPI (1:30 PM GMT - position Nov 10)
+   - Dec 5: NFP (1:30 PM GMT - position Dec 2-3)
+
+4. **DXY Measurement**:
+   - "Drops >1%" = 10:00 PM GMT close to 10:00 PM GMT close
+   - Example: 98.0 → 97.0 = 1.02% drop = TRIGGER
+
+5. **Portfolio Rebalancing**:
+   - Monday mornings: Weekly review
+   - Before major events: 2-3 days ahead
+   - After major events: Next trading day
+
+6. **Profit-Taking**:
+   - Amundi VIX ETF: At 40% gains or VIX >30
+   - Other positions: Consider at +15-20%
+   - End-game: Thursday Dec 4 is last chance
+
+---
+
 ## **TIME ZONE INFORMATION**
 
 **CRITICAL: Clock Changes During Competition**
@@ -22,19 +129,19 @@
 
 ## **CRITICAL SETUP INFORMATION**
 
-### **Your ETF Tickers & Starting Positions (Oct 20, 2025)**
+### **Your ETF Products & Starting Positions (Oct 20, 2025)**
 
-Since you're UK-based, here are the specific tickers:
+UK-accessible replacements confirmed:
 
-| Position | US Ticker | UK Alternative (if needed) | Current Price | Target Weight | £ Amount (assuming £100k portfolio) |
-|----------|-----------|----------------------------|---------------|---------------|-------------------------------------|
-| DBMF | DBMF (US) | N/A - US only | $26.68 | 10% (£10k) | - |
-| GLD | GLD (US) | **SGLN.L** (Physical Gold GBP Hedged) | £22.31 | 8% (£8k) | £358 shares |
-| KMLM | KMLM (US) | N/A - US only | $27.13 | 7% (£7k) | - |
-| VIXY | VIXY (US) | N/A - US only | $33.35 | 3% (£3k) | - |
-| Cash | - | - | - | 7% (£7k) | - |
+| Position | Product Name | Current Price | Target Weight | £ Amount (assuming £100k portfolio) |
+|----------|--------------|---------------|---------------|-------------------------------------|
+| Managed Futures 1 | iMGP DBi Managed Futures R USD ETF | Check current | 10% (£10k) | £10,000 |
+| Managed Futures 2 | AQR Managed Futures UCITS Fund A USD | Check current | 7% (£7k) | £7,000 |
+| Gold | WisdomTree Physical Gold - GBP Daily Hedged (SGLN.L) | £22.31 | 8% (£8k) | £358 shares |
+| Volatility | Amundi S&P 500 VIX Futures Enhanced Roll UCITS ETF | Check current | 3% (£3k) | £3,000 |
+| Cash | GBP | - | 7% (£7k) | £7,000 |
 
-**Recommendation**: Use **SGLN.L** (WisdomTree Physical Gold - GBP Daily Hedged) for gold exposure to avoid FX risk since you're UK-based.
+**Total: 35% allocated to diversifier sleeve**
 
 ---
 
@@ -63,7 +170,7 @@ Since you're UK-based, here are the specific tickers:
 
 - **"DXY >100"** = Dollar Index breaks above 100.00
   - Would be a ~2-3% rally from current levels
-  - **Bullish for UUP**
+  - **Bullish for WisdomTree Short EUR Long USD**
 
 ### **VIX Triggers**
 - **"VIX <16"** = CBOE Volatility Index trading below 16.00
@@ -72,17 +179,17 @@ Since you're UK-based, here are the specific tickers:
 
 - **"VIX >30"** = Immediate exit signal
   - Historical context: VIX hit 60 in April 2025, typically sits at 12-20
-  - **Action**: Place market sell order for VIXY within 30 minutes of VIX crossing 30
+  - **Action**: Place market sell order for Amundi VIX ETF within 30 minutes of VIX crossing 30
 
 - **"VIX spike >22"** = VIX crosses above 22.00
   - Signals risk-off environment
-  - Activates DBMF scaling trigger
+  - Activates iMGP DBi Managed Futures scaling trigger
 
 ### **Oil Price Triggers**
 - **"Oil >$85"** = WTI Crude Oil futures sustained above $85/barrel
   - Current price: Check NYMEX WTI front-month contract
   - **"Sustained"** = Closes above $85 for 2 consecutive days
-  - Activates DBC entry
+  - Activates WisdomTree Enhanced Commodity entry
 
 ### **FOMC Triggers**
 - **"Hawkish Fed pivot"** = Dot plot shows median 2026 rate projection increases by 25bps+ vs September
@@ -91,7 +198,7 @@ Since you're UK-based, here are the specific tickers:
 
 - **"Dovish Fed"** = 25bps cut delivered + forward guidance suggests more cuts coming
   - Or: Any 50bps cut
-  - **Bearish for UUP, GLD**
+  - **Bearish for WisdomTree Short EUR Long USD, WisdomTree Physical Gold**
 
 ### **NFP (Jobs) Triggers**
 - **"NFP >200k"** = Non-Farm Payrolls add more than 200,000 jobs
@@ -100,34 +207,34 @@ Since you're UK-based, here are the specific tickers:
 
 - **"NFP <100k"** = Jobs miss badly, adds fewer than 100,000
   - Signals economic weakness
-  - **Bearish for UUP, bullish for TLT**
+  - **Bearish for WisdomTree Short EUR Long USD, bullish for iShares Treasury 20+yr**
 
 ### **Position Sizing Language**
 - **"Scale to X%"** = Increase position from current weight to X%
-  - Example: "Scale GLD from 8% to 10%" = Buy additional 2% of portfolio (£2k)
+  - Example: "Scale WisdomTree Physical Gold from 8% to 10%" = Buy additional 2% of portfolio (£2k)
   
 - **"Deploy cash to X at Y%"** = Use your 7% cash reserve
-  - Example: "Deploy cash to DBC at 4%" = Buy £4k of DBC from cash holdings
+  - Example: "Deploy cash to WisdomTree Enhanced Commodity at 4%" = Buy £4k from cash holdings
 
 ---
 
 ## **WEEK 1: OCTOBER 20-26**
 
-### **MONDAY, OCTOBER 20 (TODAY)**
+### **MONDAY, OCTOBER 20**
 
 **⏰ 2:00 PM BST** - Place initial orders (execute Tuesday Oct 21 due to T+1)
 
 **Initial Setup Orders:**
 ```
-BUY DBMF: 375 shares @ $26.68 = $10,005 (10% of $100k portfolio)
-BUY SGLN.L: 358 shares @ £22.31 = £7,987 (8%)
-BUY KMLM: 258 shares @ $27.13 = $6,999 (7%)
-BUY VIXY: 90 shares @ $33.35 = $3,002 (3%)
-HOLD CASH: $7,000 (7%)
+BUY iMGP DBi Managed Futures R USD ETF: £10,000 (10% of portfolio)
+BUY AQR Managed Futures UCITS Fund A USD: £7,000 (7%)
+BUY WisdomTree Physical Gold - GBP Daily Hedged (SGLN.L): 358 shares @ £22.31 = £7,987 (8%)
+BUY Amundi S&P 500 VIX Futures Enhanced Roll UCITS ETF: £3,000 (3%)
+HOLD CASH: £7,000 (7%)
 ```
 
 **📊 Market Checks:**
-- Current DXY: Check if below 98.00 → Bullish for GLD
+- Current DXY: Check if below 98.00 → Bullish for gold
 - Current VIX: Check level (if <16, note for Wednesday pre-positioning)
 - Current WTI Oil: Check if approaching $85
 
@@ -136,7 +243,7 @@ HOLD CASH: $7,000 (7%)
    - DXY < 98.00
    - VIX < 16.00
    - WTI Oil > $85.00
-   - VIXY > $40.00 (for profit-taking)
+   - Amundi VIX ETF up >35% (for profit-taking)
 
 2. Subscribe to economic calendar alerts for Oct 24 CPI
 
@@ -153,7 +260,7 @@ HOLD CASH: $7,000 (7%)
 - Check if gold rebounded further from Monday's Diwali demand surge
 
 **🎯 No actions** unless:
-- VIXY drops below $30.00 → Consider adding 0.5% more (opportunistic entry before Oct 24 CPI)
+- Amundi VIX ETF drops >10% → Consider adding 0.5% more (opportunistic entry before Oct 24 CPI)
 
 ---
 
@@ -163,11 +270,11 @@ HOLD CASH: $7,000 (7%)
 
 **PRE-CPI POSITIONING:**
 
-**VIXY Decision Point:**
+**Amundi VIX ETF Decision Point:**
 - Current VIX level at 2:30 PM BST market open?
   - **If VIX < 16.00**: Execute immediately
     ```
-    BUY VIXY: Additional 60 shares @ market price
+    BUY Amundi S&P 500 VIX Futures Enhanced Roll UCITS ETF: Additional £1,000
     Target: Increase from 3% to 4% (£4k total position)
     This adds £1k from existing positions or cash
     ```
@@ -179,12 +286,12 @@ HOLD CASH: $7,000 (7%)
 - Any geopolitical headlines that could impact Thursday CPI reaction?
 
 **🎯 Action:**
-- Place VIXY order by 5:00 PM BST to ensure Thursday fill
+- Place Amundi VIX ETF order by 5:00 PM BST to ensure Thursday fill
 - Set alarm for Thursday 1:15 PM BST (pre-CPI)
 
 ---
 
-### **THURSDAY, OCTOBER 24** 🔴 **RED ALERT**
+### **THURSDAY, OCTOBER 23** 🔴 **RED ALERT**
 
 **⏰ 1:30 PM BST** - **September CPI Release** (delayed from government shutdown)
 
@@ -202,30 +309,31 @@ You **CANNOT** act immediately on the data due to T+1 settlement and Dec 4 deadl
 
 | CPI Result | DXY Reaction (by 5pm BST) | Action for Friday Orders |
 |------------|---------------------------|--------------------------|
-| MoM >0.4% AND YoY >3.0% | DXY drops >1% from Wed close | **SCALE GLD**: Buy additional £2k (from 8% to 10%). Order Friday at open. |
-| MoM >0.4% | Any DXY move | **SCALE KMLM**: Buy additional £2k (from 7% to 9%). Order Friday at open. |
-| MoM >0.5% (major surprise) | DXY drops >1% | **SCALE VIXY**: Buy additional £1k (from 4% to 5%) + GLD + KMLM. Order Friday at open. |
-| MoM <0.3% (benign) | DXY stable or up | **REDUCE VIXY**: Sell 30 shares Friday (from 4% back to 3%). Take profits. |
+| MoM >0.4% AND YoY >3.0% | DXY drops >1% from Wed close | **SCALE GOLD**: Buy additional £2k WisdomTree Physical Gold (from 8% to 10%). Order Friday at open. |
+| MoM >0.4% | Any DXY move | **SCALE AQR**: Buy additional £2k AQR Managed Futures (from 7% to 9%). Order Friday at open. |
+| MoM >0.5% (major surprise) | DXY drops >1% | **SCALE VIX**: Buy additional £1k Amundi VIX ETF (from 4% to 5%) + gold + AQR. Order Friday at open. |
+| MoM <0.3% (benign) | DXY stable or up | **REDUCE VIX**: Sell portion of Amundi VIX ETF Friday (from 4% back to 3%). Take profits. |
 
 **Calculation Example:**
 - If headline CPI comes in at 3.4% YoY (vs 3.1% prior month) with MoM at +0.5%
 - AND DXY drops from 98.0 (Wed close) to 96.9 by 5:00 PM BST
-- TRIGGERS: GLD scale (YoY >3.0% ✓ AND DXY drop >1% ✓) + KMLM scale (MoM >0.4% ✓)
+- TRIGGERS: Gold scale (YoY >3.0% ✓ AND DXY drop >1% ✓) + AQR scale (MoM >0.4% ✓)
 
-**⏰ 2:30 PM - 9:00 PM BST** - Monitor VIXY price action
+**⏰ 2:30 PM - 9:00 PM BST** - Monitor Amundi VIX ETF price action
 
-**VIXY Exit Triggers (execute Friday if hit Thursday):**
-- VIXY trades above $45.00 (35% gain from $33.35 entry) → Prepare to sell 50% of position Friday
-- VIX spikes above 25 → Prepare to sell 100% of VIXY position Friday
+**Amundi VIX ETF Exit Triggers (execute Friday if hit Thursday):**
+- Amundi VIX ETF trades up >35% gain from entry → Prepare to sell 50% of position Friday
+- VIX spikes above 25 → Prepare to sell 100% of Amundi VIX ETF position Friday
 
 **🎯 Thursday Evening Homework:**
 - Document exact CPI numbers and DXY close
 - Prepare Friday order list based on triggers
-- Check gold price reaction: if SGLN.L up >3% on Thursday, consider taking partial profits Friday
+- Check gold price reaction: if WisdomTree Physical Gold up >3% on Thursday, consider taking partial profits Friday
+
 
 ---
 
-### **FRIDAY, OCTOBER 25**
+### **FRIDAY, OCTOBER 24**
 
 **⏰ 2:00 PM BST** - **EXECUTE THURSDAY'S TRIGGER-BASED ORDERS**
 
@@ -238,15 +346,15 @@ You **CANNOT** act immediately on the data due to T+1 settlement and Dec 4 deadl
 
 **REASON**: Oct 28-29 FOMC is Tuesday-Wednesday next week. With T+1 settlement, Friday orders execute Monday, giving you proper positioning for Wednesday's 7:00 PM GMT decision (after UK clock change).
 
-**VIXY PRE-FOMC INCREASE** (if not already done after CPI):
+**Amundi VIX ETF PRE-FOMC INCREASE** (if not already done after CPI):
 
 **Current VIX check at 3:00 PM BST:**
 - **If VIX < 17.00**: 
   ```
-  BUY VIXY: Increase to 5% total (£5k)
-  If currently at 3% (90 shares @ $33.35 = £3k)
-  Need to add £2k more = ~60 additional shares
-  Calculate: £2k / (current VIXY price) = shares to buy
+  BUY Amundi S&P 500 VIX Futures Enhanced Roll UCITS ETF: Increase to 5% total (£5k)
+  If currently at 3% (£3k)
+  Need to add £2k more
+  Calculate: £2k / (current Amundi VIX ETF price) = amount to buy
   ```
 
 - **If VIX 17-20**: Increase to 4.5% total
@@ -256,8 +364,8 @@ You **CANNOT** act immediately on the data due to T+1 settlement and Dec 4 deadl
 
 **🎯 Friday Orders Summary:**
 1. Execute any CPI-triggered changes from Thursday
-2. Increase VIXY to 4-5% (executes Monday, in place for Wednesday FOMC)
-3. Check gold: if SGLN.L up >5% since Monday, consider taking 2% profit (scale back to 6%)
+2. Increase Amundi VIX ETF to 4-5% (executes Monday, in place for Wednesday FOMC)
+3. Check gold: if WisdomTree Physical Gold up >5% since Monday, consider taking 2% profit (scale back to 6%)
 
 **Weekend Homework:**
 - Monitor geopolitical news (Middle East, China-Taiwan)
@@ -265,6 +373,147 @@ You **CANNOT** act immediately on the data due to T+1 settlement and Dec 4 deadl
 - Check if any Fed speakers comment this weekend
 - **Remember: Clocks go back Sunday at 2:00 AM BST → GMT**
 
+---
+# LIVE UPDATE FRI 19.15 BST
+## Revised Critical Market Analysis (6:54 PM BST)
+
+### Key Trigger Assessment
+
+**CPI Results (Released 1:30 PM BST Today)**
+- Headline MoM: 0.3% (BELOW 0.4% trigger) ❌[3][4]
+- Core MoM: 0.2%[3]
+- Headline YoY: 3.0% (AT threshold, not >3.0%) ⚠️[3]
+- **Action: No CPI-triggered scaling required**[3]
+
+**DXY Analysis**
+- Oct 23 close: 98.92[5]
+- Current: 98.936 (+0.12% in 24hrs)[6]
+- **Daily change: +0.04 points = +0.04%** (NOT >1% drop) ❌
+- **Action: Gold scaling NOT triggered**
+
+**VIX - CRITICAL CHANGE** ✅
+- Current: **16.44** (down 4.97% today)[7]
+- **This is BELOW the 17.00 threshold** for maximum pre-FOMC positioning[2][1]
+- FOMC meeting: Tuesday-Wednesday Oct 28-29 (4 days away)[1][2]
+- Expected: 25bps cut with 97% probability[2][1]
+
+**Oil & Gold**
+- WTI: $61.60/barrel (well below $85 trigger) ❌
+- Gold: $4,110/oz (stable after CPI) ✓
+
+### Updated Action Required - URGENT (Before 7:00 PM BST Close)
+
+## **PRIMARY ACTION: Increase Amundi VIX ETF to 5% (Maximum Pre-FOMC Position)**
+
+**Current VIX: 16.44 = BELOW 17.00 threshold**
+
+Per your calendar's pre-FOMC positioning rules:[1][2]
+> **If VIX < 17.00**: BUY Amundi S&P 500 VIX Futures Enhanced Roll UCITS ETF to 5% total (£5k)
+
+**Recommended Order (Place Immediately):**
+```
+BUY Amundi S&P 500 VIX Futures Enhanced Roll UCITS ETF
+Amount: £2,000 (increase from 3% = £3k to 5% = £5k)
+Rationale: VIX at 16.44 is near 52-week lows, FOMC in 4 days
+Settlement: Monday Oct 27 (T+1)
+Target hold: Through Oct 29 FOMC decision (7:00 PM GMT)
+Exit window: Oct 30-31 (contango decay risk)
+```
+
+**Why This Is Optimal:**
+1. **VIX at multi-week low (16.44)**: Minimal downside risk[8][7]
+2. **FOMC catalyst in 4 days**: Historical volatility pickup before major Fed meetings[9][8]
+3. **Soft CPI reduces immediate vol**: Today's benign inflation data compressed VIX, creating entry opportunity[3]
+4. **97% probability of 25bps cut**: High certainty means resolution event will occur[2][1]
+5. **Research shows VIX drops AFTER FOMC**: Buying low VIX before event, selling into post-announcement compression[9][8]
+
+## Secondary Actions
+
+### **HOLD All Other Positions**
+- **iMGP DBi Managed Futures**: 10% (no scaling trigger)[4]
+- **AQR Managed Futures**: 7% (MoM was 0.3%, not >0.4%)[4][3]
+- **WisdomTree Physical Gold**: 8% / 358 shares (no DXY drop >1%, no YoY >3.0%)[5][6]
+- **Cash**: Will reduce from 7% to 5% (deploying £2k to VIX)
+
+### **DO NOT Enter**
+- ❌ WisdomTree Enhanced Commodity: Oil at $61.60, need sustained >$85
+- ❌ WisdomTree Short EUR Long USD: No hawkish trigger yet, await FOMC
+- ❌ Additional gold: Neither CPI nor DXY triggers activated[6][5][3]
+
+## Next Week's Critical Timeline (All Times in GMT After Clock Change)
+
+### **Sunday, October 26, 2:00 AM**
+- **Clocks go back: BST → GMT** (lose 1 hour)
+- Monitor Sunday evening futures for any gap moves
+
+### **Monday, October 27**
+- Verify Amundi VIX ETF order filled at 5% (£5k total)
+- Check VIX level at US market open (2:30 PM GMT)
+- **If VIX >20 by close**: Consider taking partial profits (25-30% of position)
+
+### **Tuesday, October 28 (FOMC Day 1)**
+- Monitor VIX behavior into Fed decision
+- **Alert thresholds**:
+  - VIX >25: Prepare to exit 75%
+  - VIX >30: EXIT 100% IMMEDIATELY (non-negotiable)
+
+### **Wednesday, October 29 (FOMC Day 2)**
+- **7:00 PM GMT**: FOMC rate decision + statement[1][2]
+- **7:30 PM GMT**: Fed Chair press conference
+
+**Immediate Post-FOMC Actions:**
+- Monitor VIX reaction (research shows typical drop after FOMC)[8][9]
+- **If VIX drops sharply post-decision**: Exit 75-100% of Amundi VIX ETF position Wednesday evening or Thursday morning
+- **If VIX spikes >30**: Exit 100% immediately
+- **If gain >35-40%**: Exit 100% and take profits
+
+### **Thursday, October 30**
+- **Final exit deadline for Amundi VIX ETF** (contango decay accelerates after event)
+- Even if showing modest gains, exit to avoid multi-day holding costs
+- Redeploy proceeds to cash or other positions
+
+## Risk Management - VIX Position Rules
+
+**HARD STOPS (Non-Negotiable):**
+1. **VIX >30**: EXIT 100% within 30 minutes
+2. **Gain >40%**: EXIT 100% immediately
+3. **Thursday Oct 30**: EXIT 100% by end of day (never hold VIX products >3 days around events)
+
+**Historical Context:**
+- VIX typically rises modestly 1-2 days before FOMC, then drops sharply after decision[9][8]
+- Research shows "pre-FOMC announcement drift" is accompanied by VIX decline, not increase[8][9]
+- Your edge: Buying at 16.44 (very low) with 4-day catalyst, exiting into post-FOMC compression
+
+## Updated Portfolio Allocation (After Tonight's Order)
+
+| Position | Current | After Order | £ Amount |
+|----------|---------|-------------|----------|
+| iMGP DBi Managed Futures | 10% | 10% | £10,000 |
+| AQR Managed Futures | 7% | 7% | £7,000 |
+| WisdomTree Physical Gold | 8% | 8% | £8,000 |
+| **Amundi VIX ETF** | **3%** | **5%** | **£5,000** |
+| Cash | 7% | 5% | £5,000 |
+| **Total Diversifier** | **35%** | **35%** | **£35,000** |
+
+## Weekend Homework
+
+1. **Monitor geopolitical news**: Russia oil sanctions escalating, Ukraine strikes on refineries[10]
+2. **Check Sunday futures** (open 10:00 PM GMT): Any VIX gap up would be bonus
+3. **Review Fed speaker comments**: Unlikely over weekend but possible
+4. **Set Monday alerts**:
+   - VIX >20 (profit-taking consideration)
+   - VIX >25 (75% exit trigger)
+   - VIX >30 (100% exit trigger)
+   - Amundi VIX ETF gain >35%
+
+## Summary - Execute NOW (Before 7:00 PM BST)
+
+✅ **BUY £2,000 Amundi VIX ETF** (3% → 5%)[2][1]
+✅ **HOLD all other positions unchanged**[5][6][3]
+❌ **DO NOT scale gold, AQR, or enter commodities**[4][3]
+⏰ **EXIT plan: Oct 30 by latest** (2-3 day maximum hold)[9][8]
+
+**Rationale**: VIX at 16.44 with FOMC in 4 days is your calendar's exact trigger for maximum pre-event positioning. This is a tactical 2-3 day trade, not a strategic hold.[8][1][2]
 ---
 
 ### **SUNDAY, OCTOBER 26** ⏰ **CLOCK CHANGE**
@@ -283,7 +532,7 @@ You **CANNOT** act immediately on the data due to T+1 settlement and Dec 4 deadl
 **⏰ 2:00 PM GMT** - Verify Friday's orders executed
 
 **📊 Position Check:**
-- VIXY should now be at 4-5% weight
+- Amundi VIX ETF should now be at 4-5% weight
 - All CPI-triggered adjustments from Thursday should be in place
 - Cash position: ~2-7% depending on Friday deployments
 
@@ -291,15 +540,15 @@ You **CANNOT** act immediately on the data due to T+1 settlement and Dec 4 deadl
 
 **DXY Level Check:**
 - Current DXY: ____
-- **If DXY > 99.5** (strengthening): Consider small UUP addition
+- **If DXY > 99.5** (strengthening): Consider small WisdomTree Short EUR Long USD addition
   ```
-  If DXY breaks above 100: BUY UUP 2% (£2k from cash)
+  If DXY breaks above 100: BUY WisdomTree Short EUR Long USD 2% (£2k from cash)
   Rationale: Momentum trade, despite macro headwinds
   ```
 
 **🎯 Evening: Prepare for FOMC volatility**
 - Set alerts for Tuesday-Wednesday:
-  - VIXY > $45 (profit-taking alert)
+  - Amundi VIX ETF up >30% (profit-taking alert)
   - VIX > 28 (exit signal)
   - DXY crosses 98 or 100
 
@@ -309,32 +558,32 @@ You **CANNOT** act immediately on the data due to T+1 settlement and Dec 4 deadl
 
 **⏰ All Day** - **Day 1 of 2-day FOMC Meeting**
 
-**VIXY MONITORING (Highest Priority):**
+**AMUNDI VIX ETF MONITORING (Highest Priority):**
 
-**2:30 PM GMT**: Check VIXY open price
-- **If up >15% from Friday close** (~$38+): Consider partial profit-take
-  - Place order to sell 30% of VIXY position
+**2:30 PM GMT**: Check Amundi VIX ETF open price
+- **If up >15% from Friday close**: Consider partial profit-take
+  - Place order to sell 30% of Amundi VIX ETF position
   - Locks in gains, keeps 70% for Wednesday's decision
 
 **5:00 PM GMT**: Mid-day check
-- **If VIXY approaching $40** (20% gain): Place limit order to sell 50% at $41
+- **If Amundi VIX ETF approaching 20% gain**: Place limit order to sell 50%
 
 **9:00 PM GMT**: Check closing levels
 - VIX close: ____
-- VIXY close: ____
+- Amundi VIX ETF close: ____
 - Calculate gain/loss from entry
 
 **🎯 Tuesday Evening - CRITICAL PREP:**
 - FOMC decision is Wednesday 7:00 PM GMT (was 2:00 PM ET, now US is still on EDT, UK on GMT = 4 hour difference)
 - Your ability to react is LIMITED (T+1 settlement + Dec 4 deadline)
-- **Decision**: If you want to exit VIXY post-FOMC, you must place Wednesday orders by 8:30 PM GMT
+- **Decision**: If you want to exit Amundi VIX ETF post-FOMC, you must place Wednesday orders by 8:30 PM GMT
   - But data comes out at 7:00 PM GMT
   - You have 90-minute window to react for Thursday execution
 
 **Prepare contingency orders for Wednesday 7:30 PM GMT:**
-1. If FOMC is as-expected (25bps cut, neutral): Plan to sell 50% of VIXY Thursday
-2. If FOMC is hawkish surprise (no cut/higher dot plot): Plan to HOLD VIXY + add UUP
-3. If FOMC is dovish surprise (50bps cut/2026 cuts): Plan to sell VIXY + reduce GLD
+1. If FOMC is as-expected (25bps cut, neutral): Plan to sell 50% of Amundi VIX ETF Thursday
+2. If FOMC is hawkish surprise (no cut/higher dot plot): Plan to HOLD Amundi VIX ETF + add WisdomTree Short EUR Long USD
+3. If FOMC is dovish surprise (50bps cut/2026 cuts): Plan to sell Amundi VIX ETF + reduce WisdomTree Physical Gold
 
 ---
 
@@ -342,10 +591,10 @@ You **CANNOT** act immediately on the data due to T+1 settlement and Dec 4 deadl
 
 **⏰ 2:30 PM - 7:00 PM GMT** - Pre-decision monitoring
 
-**VIXY Profit-Taking Preparation:**
-- Morning VIXY price: ____
+**Amundi VIX ETF Profit-Taking Preparation:**
+- Morning Amundi VIX ETF price: ____
 - Unrealized gain: ____
-- **If VIXY up >30% from entry** ($43+): Strongly consider taking profits
+- **If Amundi VIX ETF up >30% from entry**: Strongly consider taking profits
   - Remember: April 2025 it went up 100%, but average FOMC reactions are 20-40%
 
 **⏰ 7:00 PM GMT** - **FOMC DECISION RELEASED**
@@ -359,37 +608,37 @@ You **CANNOT** act immediately on the data due to T+1 settlement and Dec 4 deadl
 
 **TRIGGER DECISION MATRIX (7:30-8:30 PM GMT window to place Thursday orders):**
 
-| FOMC Outcome | VIX/VIXY Reaction | Thursday Actions |
+| FOMC Outcome | VIX/Amundi VIX ETF Reaction | Thursday Actions |
 |--------------|-------------------|------------------|
-| **25bps cut + neutral/slightly hawkish** (EXPECTED) | VIX spikes to 24-28, VIXY up 20-35% | **SELL 100% VIXY** by 8:30 PM GMT for Thursday execution. Lock in gains. Reset to 0% VIXY. |
-| **No cut + hawkish language** (SURPRISE) | VIX explodes >30, VIXY up >40% | **SELL 100% VIXY** immediately (VIX >30 rule). **BUY UUP 2-3%** from cash. Hold GLD. |
-| **50bps cut + dovish forward guidance** (SURPRISE) | VIX drops <18, VIXY down | **HOLD or ADD VIXY** (vol will come back). **REDUCE GLD by 2%** (from 8% to 6%). **SELL any UUP**. |
-| **25bps + hawkish dot plot** (+25bps 2026 vs Sept) | VIX spikes to 25-30 | **SELL 50% VIXY** (take profits). **ADD KMLM 1%**. **ADD UUP 2%** if DXY rallies >1%. |
+| **25bps cut + neutral/slightly hawkish** (EXPECTED) | VIX spikes to 24-28, Amundi VIX ETF up 20-35% | **SELL 100% Amundi VIX ETF** by 8:30 PM GMT for Thursday execution. Lock in gains. Reset to 0%. |
+| **No cut + hawkish language** (SURPRISE) | VIX explodes >30, Amundi VIX ETF up >40% | **SELL 100% Amundi VIX ETF** immediately (VIX >30 rule). **BUY WisdomTree Short EUR Long USD 2-3%** from cash. Hold gold. |
+| **50bps cut + dovish forward guidance** (SURPRISE) | VIX drops <18, Amundi VIX ETF down | **HOLD or ADD Amundi VIX ETF** (vol will come back). **REDUCE WisdomTree Physical Gold by 2%** (from 8% to 6%). **SELL any WisdomTree Short EUR Long USD**. |
+| **25bps + hawkish dot plot** (+25bps 2026 vs Sept) | VIX spikes to 25-30 | **SELL 50% Amundi VIX ETF** (take profits). **ADD AQR Managed Futures 1%**. **ADD WisdomTree Short EUR Long USD 2%** if DXY rallies >1%. |
 
-**SPECIFIC VIXY EXIT INSTRUCTION:**
+**SPECIFIC AMUNDI VIX ETF EXIT INSTRUCTION:**
 
 **IF VIX crosses 30 at ANY point 7:00 PM - 9:00 PM GMT:**
 ```
 PLACE MARKET SELL ORDER IMMEDIATELY:
-Sell 100% of VIXY position (all ~150 shares if at 5%)
+Sell 100% of Amundi S&P 500 VIX Futures Enhanced Roll UCITS ETF position
 REASON: VIX >30 = non-negotiable exit trigger
 Execution: Thursday Oct 30
-Lock in: Likely 35-50% gains ($33 → $45-50)
+Lock in: Likely 35-50% gains
 ```
 
-**IF VIX stays 24-29 AND VIXY up 25-40%:**
+**IF VIX stays 24-29 AND Amundi VIX ETF up 25-40%:**
 ```
 PLACE LIMIT SELL ORDER by 8:30 PM GMT:
-Sell 100% of VIXY at current price or better
+Sell 100% of Amundi VIX ETF at current price or better
 REASON: Taking profits after successful FOMC hedge
 Execution: Thursday Oct 30
 Lock in: 25-40% gains
-RESET: VIXY back to 0%, redeploy to cash/other positions
+RESET: Amundi VIX ETF back to 0%, redeploy to cash/other positions
 ```
 
-**IF VIX stays <22 AND VIXY flat to down:**
+**IF VIX stays <22 AND Amundi VIX ETF flat to down:**
 ```
-HOLD VIXY at current 5%
+HOLD Amundi VIX ETF at current 5%
 REASON: Volatility didn't materialize, wait for next catalyst (Nov 13 CPI)
 Next action: Reduce to 3% on Friday if VIX still <20
 ```
@@ -397,7 +646,7 @@ Next action: Reduce to 3% on Friday if VIX still <20
 **⏰ 8:00 PM GMT - DXY CHECK:**
 - DXY at 8:00 PM GMT: ____
 - Change from yesterday's close: ____%
-- **If DXY up >1% on hawkish FOMC**: Place order to BUY UUP 2% (£2k from cash) for Thursday execution
+- **If DXY up >1% on hawkish FOMC**: Place order to BUY WisdomTree Short EUR Long USD 2% (£2k from cash) for Thursday execution
 
 **⏰ 8:30 PM GMT - FINAL ORDER PLACEMENT DEADLINE**
 - All Thursday orders must be in by now
@@ -406,7 +655,7 @@ Next action: Reduce to 3% on Friday if VIX still <20
 
 **🎯 Wednesday 9:30 PM GMT - Post-Close Review:**
 - Document: FOMC decision, dot plot changes, Powell's key comments
-- Calculate: Final VIXY performance if sold
+- Calculate: Final Amundi VIX ETF performance if sold
 - Assess: Did any other triggers activate? (DXY moves, etc.)
 - Plan: Thursday position adjustments if needed
 
@@ -417,22 +666,22 @@ Next action: Reduce to 3% on Friday if VIX still <20
 **⏰ 2:30 PM GMT** - Verify Wednesday's orders executed
 
 **Post-FOMC Position Review:**
-- VIXY: Should be reduced or eliminated if triggers hit
-- UUP: Should be added if DXY rallied >1%
-- GLD: Should be reduced if Fed was very dovish
-- Cash: Should be higher if VIXY profits taken
+- Amundi VIX ETF: Should be reduced or eliminated if triggers hit
+- WisdomTree Short EUR Long USD: Should be added if DXY rallied >1%
+- WisdomTree Physical Gold: Should be reduced if Fed was very dovish
+- Cash: Should be higher if Amundi VIX ETF profits taken
 
 **Expected Post-FOMC Portfolio:**
-- DBMF: 10% (unchanged)
-- GLD/SGLN.L: 6-10% (depending on Fed dovishness)
-- KMLM: 7-9% (depending on Fed hawkishness)
-- VIXY: 0-3% (likely sold or heavily reduced)
-- UUP: 0-3% (added if hawkish)
-- Cash: 8-12% (replenished from VIXY profits)
+- iMGP DBi Managed Futures: 10% (unchanged)
+- WisdomTree Physical Gold: 6-10% (depending on Fed dovishness)
+- AQR Managed Futures: 7-9% (depending on Fed hawkishness)
+- Amundi VIX ETF: 0-3% (likely sold or heavily reduced)
+- WisdomTree Short EUR Long USD: 0-3% (added if hawkish)
+- Cash: 8-12% (replenished from Amundi VIX ETF profits)
 
 **📊 Market Assessment:**
 - Was FOMC as expected or surprising?
-- Did managed futures (DBMF/KMLM) benefit from volatility?
+- Did managed futures (iMGP/AQR) benefit from volatility?
 - Is gold rallying or falling post-FOMC?
 
 **🎯 Prepare for Friday PCE data** (next catalyst)
@@ -457,7 +706,7 @@ Next action: Reduce to 3% on Friday if VIX still <20
 
 **If Core PCE > 2.8% YoY** (inflation still sticky):
 ```
-SCALE DBMF: Buy additional £2k (from 10% to 12%)
+SCALE iMGP DBi Managed Futures: Buy additional £2k (from 10% to 12%)
 Rationale: Higher inflation = more Fed uncertainty = more volatility trends for managed futures
 Order Monday morning for Tuesday execution
 ```
@@ -469,13 +718,13 @@ Order Monday morning for Tuesday execution
 
 **If Real Yield turns NEGATIVE** (10Y yield < PCE inflation):
 ```
-SCALE GLD: Buy additional £2k (from 8% to 10%)
+SCALE WisdomTree Physical Gold: Buy additional £2k (from 8% to 10%)
 Rationale: Negative real yields = gold's sweet spot
 Order Monday morning for Tuesday execution
 ```
 
 **⏰ 2:30 PM - 9:00 PM GMT** - Monitor gold reaction
-- SGLN.L intraday performance: ____
+- WisdomTree Physical Gold intraday performance: ____
 - If up >2% on PCE data: Confirms inflation hedge narrative
 
 **🎯 Friday Evening - Weekend Prep:**
@@ -488,9 +737,9 @@ Order Monday morning for Tuesday execution
 - Plan Monday positioning adjustments
 
 **Weekend Homework:**
-1. Check China PMI Saturday morning (affects DBC trigger)
+1. Check China PMI Saturday morning (affects WisdomTree Enhanced Commodity trigger)
 2. Monitor geopolitical news
-3. Review DBMF/KMLM performance during FOMC volatility week
+3. Review iMGP/AQR performance during FOMC volatility week
 4. **Remember: US clocks change Sunday Nov 2** - US data releases move to 1:30 PM GMT starting Nov 7
 
 ---
@@ -512,32 +761,31 @@ Order Monday morning for Tuesday execution
 
 Check result Saturday/Sunday morning UK time:
 - **If PMI < 48**: Warning signal for commodities
-  - If you have any DBC position: Prepare to exit
-  - Reduces likelihood of deploying cash to DBC
+  - If you have any WisdomTree Enhanced Commodity position: Prepare to exit
+  - Reduces likelihood of deploying cash to WisdomTree Enhanced Commodity
 - **If PMI > 51**: Positive for commodities
-  - If oil is also >$85: Consider deploying cash to DBC
+  - If oil is also >$85: Consider deploying cash to WisdomTree Enhanced Commodity
 
 **⏰ 2:00 PM GMT** - Weekly portfolio rebalance
 
 **Execute any Friday PCE-triggered orders:**
-- DBMF scale if Core PCE was >2.8%
-- GLD scale if real yields went negative
+- iMGP DBi Managed Futures scale if Core PCE was >2.8%
+- WisdomTree Physical Gold scale if real yields went negative
 
 **📊 Position Status Check:**
-- DBMF: Should be 10-12%
-- GLD/SGLN.L: Should be 8-10%
-- KMLM: Should be 7-9%
-- VIXY: Should be 0-3% (reset after FOMC)
-- UUP: Should be 0-3%
+- iMGP DBi Managed Futures: Should be 10-12%
+- WisdomTree Physical Gold: Should be 8-10%
+- AQR Managed Futures: Should be 7-9%
+- Amundi VIX ETF: Should be 0-3% (reset after FOMC)
+- WisdomTree Short EUR Long USD: Should be 0-3%
 - Cash: Should be 5-10%
 
 **Oil Price Check:**
 - Current WTI: $____
 - **If WTI > $85 for 2 consecutive days** (check Friday and today):
   ```
-  DEPLOY CASH TO DBC: Buy £4k (4% position)
+  DEPLOY CASH TO WisdomTree Enhanced Commodity UCITS ETF: Buy £4k (4% position)
   Rationale: Oil strength + China PMI >50 = commodity momentum
-  Ticker: DBC (US-listed)
   Order today for Tuesday execution
   ```
 
@@ -552,13 +800,13 @@ Check result Saturday/Sunday morning UK time:
 **Note**: In 2025, check if there's a significant election or political event this week. Your documents don't specify, but "November 5 U.S. election" was mentioned as a potential volatility catalyst.
 
 **Election Volatility Positioning** (if election is Nov 5):
-- Consider adding VIXY back to 3-4% for election night volatility
+- Consider adding Amundi VIX ETF back to 3-4% for election night volatility
 - Order Wednesday morning for Thursday execution
 - Election results may create currency/gold volatility
 
 **📊 Market Calm Assessment:**
 - VIX level: ____
-- If VIX < 15 and election tomorrow: **ADD VIXY to 3%**
+- If VIX < 15 and election tomorrow: **ADD Amundi VIX ETF to 3%**
 
 ---
 
@@ -567,8 +815,8 @@ Check result Saturday/Sunday morning UK time:
 **⏰ All Day** - Potential **US Election Day** volatility
 
 Monitor for unexpected outcomes that could trigger:
-- Safe-haven flows → GLD, UUP
-- Risk-off → VIXY spike
+- Safe-haven flows → WisdomTree Physical Gold, WisdomTree Short EUR Long USD
+- Risk-off → Amundi VIX ETF spike
 - Policy clarity → various impacts
 
 **No scheduled economic data**
@@ -586,8 +834,8 @@ Monitor for unexpected outcomes that could trigger:
 - Current consensus estimate: ~150-180k jobs
 - Set up triggers for Friday morning reaction
 
-**VIXY Assessment:**
-- If VIX < 16 and you're not in VIXY: Consider small 2% add
+**Amundi VIX ETF Assessment:**
+- If VIX < 16 and you're not in Amundi VIX ETF: Consider small 2% add
 - NFP can create intraday volatility spikes
 
 ---
@@ -610,25 +858,25 @@ Monitor for unexpected outcomes that could trigger:
 
 | NFP Result | DXY Reaction | Monday Actions |
 |------------|--------------|----------------|
-| **> 200k** (strong labor market) | DXY rallies | **BUY UUP 4%** (from cash). Strong dollar play. Order Monday for Tuesday execution. |
+| **> 200k** (strong labor market) | DXY rallies | **BUY WisdomTree Short EUR Long USD 4%** (from cash). Strong dollar play. Order Monday for Tuesday execution. |
 | **150-200k** (as expected) | DXY stable | **NO ACTION**. Monitor into next week. |
-| **< 100k** (weak labor market) | DXY weakens | **DEPLOY CASH TO TLT 5%** (from cash). Recession fears + Fed cuts = bonds rally. **REDUCE/EXIT UUP** if held. Order Monday for Tuesday execution. |
-| **< 50k** (crisis scenario) | DXY volatile | **SCALE DBMF to 12%** + **ADD TLT 5%** + **EXIT UUP**. Full defensive. |
+| **< 100k** (weak labor market) | DXY weakens | **DEPLOY CASH TO iShares $ Treasury Bond 20+yr UCITS ETF 5%** (from cash). Recession fears + Fed cuts = bonds rally. **REDUCE/EXIT WisdomTree Short EUR Long USD** if held. Order Monday for Tuesday execution. |
+| **< 50k** (crisis scenario) | DXY volatile | **SCALE iMGP DBi Managed Futures to 12%** + **ADD iShares Treasury 20+yr 5%** + **EXIT WisdomTree Short EUR Long USD**. Full defensive. |
 
 **Specific Calculation:**
 - Consensus: 175k jobs
 - Actual: 230k jobs (strong surprise)
 - DXY jumps from 98.0 to 99.3 by 2:00 PM GMT (+1.3% move)
-- **TRIGGER**: NFP >200k ✓ → Plan to buy UUP Monday morning
+- **TRIGGER**: NFP >200k ✓ → Plan to buy WisdomTree Short EUR Long USD Monday morning
 
-**⏰ 3:00 PM GMT - VIXY Profit-Taking Check:**
-- If NFP caused volatility spike and VIXY up >25%: Consider partial profit-take
+**⏰ 3:00 PM GMT - Amundi VIX ETF Profit-Taking Check:**
+- If NFP caused volatility spike and Amundi VIX ETF up >25%: Consider partial profit-take
 - Order Monday if taking profits
 
 **🎯 Weekend Homework:**
 - Assess week's performance post-FOMC/PCE/NFP
 - Calculate: Is portfolio up/down vs Oct 20 start?
-- Review: DBMF/KMLM performance in volatility week
+- Review: iMGP/AQR performance in volatility week
 - Prepare: Next week's major event is Nov 13 CPI (big one!)
 
 ---
@@ -642,17 +890,17 @@ Monitor for unexpected outcomes that could trigger:
 **REASON**: Nov 13 (Wednesday) CPI is a massive volatility catalyst. Must position by Tuesday close for Wednesday exposure.
 
 **Execute any NFP-triggered orders from Friday:**
-- UUP addition if jobs were strong
-- TLT addition if jobs were weak
-- VIXY profit-taking if triggered
+- WisdomTree Short EUR Long USD addition if jobs were strong
+- iShares $ Treasury Bond 20+yr addition if jobs were weak
+- Amundi VIX ETF profit-taking if triggered
 
-**VIXY SCALING FOR NOV 13 CPI:**
+**AMUNDI VIX ETF SCALING FOR NOV 13 CPI:**
 
 **Current VIX at 2:30 PM GMT: ____**
 
 - **If VIX < 14**: 
   ```
-  MAXIMIZE VIXY: Buy to 5% total
+  MAXIMIZE Amundi S&P 500 VIX Futures Enhanced Roll UCITS ETF: Buy to 5% total
   Current: 0-3% → Target: 5%
   Add: £2-5k depending on current position
   REASON: VIX extremely suppressed, CPI likely to spike it
@@ -661,13 +909,13 @@ Monitor for unexpected outcomes that could trigger:
 
 - **If VIX 14-17**:
   ```
-  SCALE VIXY: Buy to 4%
+  SCALE Amundi VIX ETF: Buy to 4%
   Conservative CPI hedge
   ```
 
 - **If VIX > 17**:
   ```
-  HOLD VIXY: At current 3%
+  HOLD Amundi VIX ETF: At current 3%
   Vol already elevated
   ```
 
@@ -677,7 +925,7 @@ Monitor for unexpected outcomes that could trigger:
 - CPI releases frequently cause 20-30% VIX spikes
 
 **🎯 Set up CPI day alerts:**
-- VIXY > $40 (profit-taking level)
+- Amundi VIX ETF up >35% (profit-taking level)
 - VIX > 28 (exit signal)
 - DXY crosses 98 or 100
 
@@ -685,14 +933,14 @@ Monitor for unexpected outcomes that could trigger:
 
 ### **TUESDAY, NOVEMBER 11**
 
-**⏰ 2:00 PM GMT** - Verify Monday's VIXY scaling executed
+**⏰ 2:00 PM GMT** - Verify Monday's Amundi VIX ETF scaling executed
 
 **⏰ 7:00 PM GMT** - **LAST CHANCE for Wednesday CPI positioning**
 
 **Final Position Check before CPI:**
-- VIXY: Should be at 4-5%
-- GLD: At 8-10% (ready to scale if inflation surprises)
-- KMLM: At 7-9% (will capture CPI volatility trends)
+- Amundi VIX ETF: Should be at 4-5%
+- WisdomTree Physical Gold: At 8-10% (ready to scale if inflation surprises)
+- AQR Managed Futures: At 7-9% (will capture CPI volatility trends)
 - Cash: ~3-7% (some dry powder for reactions)
 
 **DXY Level: ____**
@@ -734,49 +982,49 @@ Monitor for unexpected outcomes that could trigger:
 - 3:00 PM GMT: DXY = ____
 - % Change from Tuesday close: ____%
 
-**VIX/VIXY Tracking:**
-- 1:30 PM GMT: VIX = ____ | VIXY = $____
-- 2:30 PM GMT: VIX = ____ | VIXY = $____
-- 3:00 PM GMT: VIX = ____ | VIXY = $____
+**VIX/Amundi VIX ETF Tracking:**
+- 1:30 PM GMT: VIX = ____ | Amundi VIX ETF = ____
+- 2:30 PM GMT: VIX = ____ | Amundi VIX ETF = ____
+- 3:00 PM GMT: VIX = ____ | Amundi VIX ETF = ____
 
 **TRIGGER MATRIX - THURSDAY ORDER DECISIONS:**
 
-| CPI Scenario | DXY Move | VIX/VIXY Reaction | Thursday Orders |
+| CPI Scenario | DXY Move | VIX/Amundi VIX ETF Reaction | Thursday Orders |
 |--------------|----------|-------------------|-----------------|
-| **HOT** (MoM >0.4%, YoY >3.2%) | DXY drops >1.5% | VIX spikes >28, VIXY up 40%+ | **SELL 100% VIXY** (profit-take). **SCALE GLD to 10%**. **SCALE KMLM to 9%**. Lock in gains. |
-| **WARM** (MoM 0.3-0.4%, YoY 3.0-3.2%) | DXY drops 0.5-1.0% | VIX spikes 20-27, VIXY up 25-35% | **SELL 50-75% VIXY** (partial profit-take). **SCALE GLD to 9%** (modest add). Hold KMLM. |
-| **AS EXPECTED** (MoM ~0.3%, YoY ~3.0%) | DXY stable (±0.5%) | VIX spikes 18-22, VIXY up 15-25% | **SELL 50% VIXY** (take some profits). Hold other positions. |
-| **COOL** (MoM <0.2%, YoY <2.9%) | DXY rallies >1% | VIX drops <17, VIXY down or flat | **REDUCE GLD by 2%** (8% → 6%). **HOLD VIXY** (vol will come back for FOMC). Consider **ADDING UUP 2%**. |
+| **HOT** (MoM >0.4%, YoY >3.2%) | DXY drops >1.5% | VIX spikes >28, Amundi VIX ETF up 40%+ | **SELL 100% Amundi VIX ETF** (profit-take). **SCALE WisdomTree Physical Gold to 10%**. **SCALE AQR Managed Futures to 9%**. Lock in gains. |
+| **WARM** (MoM 0.3-0.4%, YoY 3.0-3.2%) | DXY drops 0.5-1.0% | VIX spikes 20-27, Amundi VIX ETF up 25-35% | **SELL 50-75% Amundi VIX ETF** (partial profit-take). **SCALE WisdomTree Physical Gold to 9%** (modest add). Hold AQR. |
+| **AS EXPECTED** (MoM ~0.3%, YoY ~3.0%) | DXY stable (±0.5%) | VIX spikes 18-22, Amundi VIX ETF up 15-25% | **SELL 50% Amundi VIX ETF** (take some profits). Hold other positions. |
+| **COOL** (MoM <0.2%, YoY <2.9%) | DXY rallies >1% | VIX drops <17, Amundi VIX ETF down or flat | **REDUCE WisdomTree Physical Gold by 2%** (8% → 6%). **HOLD Amundi VIX ETF** (vol will come back for FOMC). Consider **ADDING WisdomTree Short EUR Long USD 2%**. |
 
-**CRITICAL VIXY EXIT TRIGGERS** (place Thursday orders by 8:30 PM GMT Wednesday):
+**CRITICAL AMUNDI VIX ETF EXIT TRIGGERS** (place Thursday orders by 8:30 PM GMT Wednesday):
 
 **NON-NEGOTIABLE EXITS:**
 ```
 IF VIX > 30 at ANY point 1:30 PM - 9:00 PM GMT:
-→ SELL 100% VIXY immediately via market order
+→ SELL 100% Amundi S&P 500 VIX Futures Enhanced Roll UCITS ETF immediately via market order
 → Lock in likely 50-80% gains
 → Reason: VIX >30 rule + contango decay accelerates above 30
 
-IF VIXY > $45 (35% gain) by 3:00 PM GMT:
-→ SELL 75% VIXY via limit order at $45 or better
+IF Amundi VIX ETF up >35% gain by 3:00 PM GMT:
+→ SELL 75% Amundi VIX ETF via limit order at current price or better
 → Keep 25% for potential further spike
 → Reason: Profit-taking discipline
 
-IF VIXY > $50 (50% gain) by 5:00 PM GMT:
-→ SELL 100% VIXY immediately
+IF Amundi VIX ETF up >50% gain by 5:00 PM GMT:
+→ SELL 100% Amundi VIX ETF immediately
 → Exceptional return, don't be greedy
-→ April 2025: VIXY went up 100%, but 50% is excellent
+→ April 2025: Similar products went up 100%, but 50% is excellent
 ```
 
 **⏰ 5:00 PM GMT - Mid-Day Assessment**
 
 **Position Performance Check:**
-- VIXY gain/loss: ____%
-- SGLN.L (gold) gain/loss: ____%
-- DBMF/KMLM movement: Did they capture volatility?
+- Amundi VIX ETF gain/loss: ____%
+- WisdomTree Physical Gold gain/loss: ____%
+- iMGP/AQR movement: Did they capture volatility?
 
-**If VIXY profits taken:**
-- New cash balance: £____ (original 7% + VIXY profits)
+**If Amundi VIX ETF profits taken:**
+- New cash balance: £____ (original 7% + Amundi VIX ETF profits)
 - Available for deployment: Consider next triggers
 
 **⏰ 8:30 PM GMT - FINAL THURSDAY ORDER DEADLINE**
@@ -785,16 +1033,16 @@ IF VIXY > $50 (50% gain) by 5:00 PM GMT:
 
 Example order ticket (if HOT CPI scenario):
 ```
-SELL: VIXY - all shares at market (if VIX >28)
-BUY: SGLN.L - £2,000 additional (scale 8% → 10%)
-BUY: KMLM - £2,000 additional (scale 7% → 9%)
+SELL: Amundi S&P 500 VIX Futures Enhanced Roll UCITS ETF - all shares at market (if VIX >28)
+BUY: WisdomTree Physical Gold - GBP Daily Hedged - £2,000 additional (scale 8% → 10%)
+BUY: AQR Managed Futures UCITS Fund A USD - £2,000 additional (scale 7% → 9%)
 REASON: Hot inflation + dollar weakness = gold/managed futures bullish
 EXECUTION: Thursday Nov 14
 ```
 
 **🎯 Wednesday 10:00 PM GMT - Post-CPI Review:**
 - Document: CPI results, market reactions, orders placed
-- Calculate: VIXY total return if exited
+- Calculate: Amundi VIX ETF total return if exited
 - Assess: Portfolio positioning for next 3 weeks
 - Next major event: Nov 18 OPEC+ meeting
 
@@ -807,18 +1055,18 @@ EXECUTION: Thursday Nov 14
 **Post-CPI Portfolio Assessment:**
 
 **Expected positions after CPI volatility:**
-- DBMF: 10-12% (unchanged or scaled if inflation hot)
-- GLD/SGLN.L: 6-10% (adjusted based on CPI/DXY reaction)
-- KMLM: 7-9% (scaled if inflation surprised)
-- VIXY: 0-2% (likely mostly or fully exited)
-- UUP: 0-4% (added if CPI was cool and DXY rallied)
-- TLT: 0-5% (added if CPI was cool = dovish Fed)
-- Cash: 8-15% (replenished from VIXY profits)
+- iMGP DBi Managed Futures: 10-12% (unchanged or scaled if inflation hot)
+- WisdomTree Physical Gold: 6-10% (adjusted based on CPI/DXY reaction)
+- AQR Managed Futures: 7-9% (scaled if inflation surprised)
+- Amundi VIX ETF: 0-2% (likely mostly or fully exited)
+- WisdomTree Short EUR Long USD: 0-4% (added if CPI was cool and DXY rallied)
+- iShares $ Treasury Bond 20+yr: 0-5% (added if CPI was cool = dovish Fed)
+- Cash: 8-15% (replenished from Amundi VIX ETF profits)
 
 **📊 Week-to-Date Performance:**
 - Calculate total portfolio return Nov 10-14
 - Assess: Did CPI volatility hedge work?
-- VIXY performance: If exited, what was total return from $33.35 entry?
+- Amundi VIX ETF performance: If exited, what was total return from entry?
 
 **🎯 Prepare for next catalysts:**
 - Nov 18 (Mon): OPEC+ meeting
@@ -834,14 +1082,14 @@ EXECUTION: Thursday Nov 14
 
 **Weekly Review:**
 - CPI week performance: ____%
-- VIXY strategy effectiveness: Did pre-positioning work?
-- Gold performance: Up or down post-CPI?
-- Managed futures: Did DBMF/KMLM capture trends?
+- Amundi VIX ETF strategy effectiveness: Did pre-positioning work?
+- WisdomTree Physical Gold performance: Up or down post-CPI?
+- Managed futures: Did iMGP/AQR capture trends?
 
 **Position Optimization:**
-- If cash balance is high (>12%) from VIXY profits: Plan next deployment
-- Review oil prices: Is WTI approaching $85 for DBC entry?
-- Check DXY: Is dollar trend clear for UUP decision?
+- If cash balance is high (>12%) from Amundi VIX ETF profits: Plan next deployment
+- Review oil prices: Is WTI approaching $85 for WisdomTree Enhanced Commodity entry?
+- Check DXY: Is dollar trend clear for WisdomTree Short EUR Long USD decision?
 
 **🎯 Weekend Homework:**
 1. Research OPEC+ meeting expectations for Nov 18
@@ -876,15 +1124,13 @@ EXECUTION: Thursday Nov 14
 2. Headline will say: "OPEC+ agrees to cut production by XXX thousand barrels per day"
 3. Common scenarios:
    - Maintain current cuts (neutral, no action)
-   - Extend cuts through Q1 2026 (bullish oil, consider DBC)
-   - **Deepen cuts by >500k b/d** (very bullish oil, **DEPLOY CASH TO DBC**)
-   - Increase production (bearish oil, avoid DBC)
+   - Extend cuts through Q1 2026 (bullish oil, consider WisdomTree Enhanced Commodity)
+   - **Deepen cuts by >500k b/d** (very bullish oil, **DEPLOY CASH TO WisdomTree Enhanced Commodity**)
+   - Increase production (bearish oil, avoid WisdomTree Enhanced Commodity)
 
 **IF OPEC+ announces cuts >500k b/d:**
 ```
-DEPLOY CASH TO DBC: Buy £4,000 (4% position)
-Ticker: DBC (Invesco DB Commodity Index Tracking Fund)
-Current price: Check at time of order
+DEPLOY CASH TO WisdomTree Enhanced Commodity UCITS ETF: Buy £4,000 (4% position)
 Rationale: Supply shock + demand = oil rally
 Order: Place immediately for Tuesday execution
 Hold: Until China PMI <48 for 2 months OR oil <$80
@@ -903,9 +1149,9 @@ Hold: Until China PMI <48 for 2 months OR oil <$80
 
 **⏰ All Day** - OPEC+ follow-through (if Monday announcement) or continuation
 
-**If DBC was triggered Monday:**
+**If WisdomTree Enhanced Commodity was triggered Monday:**
 - Verify order executed
-- New position: DBC at 4% (£4k)
+- New position: WisdomTree Enhanced Commodity at 4% (£4k)
 - Monitor oil price confirmation: Should be >$85 if cut was real
 
 **If no OPEC+ decision yet:**
@@ -931,7 +1177,7 @@ Hold: Until China PMI <48 for 2 months OR oil <$80
 - U.S.-China tensions
 - Any major geopolitical shock
 
-**GLD GEOPOLITICAL TRIGGER:**
+**WISDOMTREE PHYSICAL GOLD GEOPOLITICAL TRIGGER:**
 
 **IF any of these occur:**
 - Military escalation (airstrikes, missile attacks, invasion)
@@ -941,17 +1187,17 @@ Hold: Until China PMI <48 for 2 months OR oil <$80
 
 **AND gold price spikes >2% intraday:**
 ```
-SCALE GLD: Buy additional £2,000 (8% → 10%)
+SCALE WisdomTree Physical Gold - GBP Daily Hedged: Buy additional £2,000 (8% → 10%)
 Rationale: Flight to safety + geopolitical premium
 Order: Place immediately for Thursday execution
 Monitor: May need to take profits if situation resolves quickly
 ```
 
-**UUP SAFE-HAVEN TRIGGER:**
+**WISDOMTREE SHORT EUR LONG USD SAFE-HAVEN TRIGGER:**
 
 **IF geopolitical shock is severe** (VIX >25, equity markets down >2%):
 ```
-ADD UUP: Buy £2,000-3,000 (2-3% position)
+ADD WisdomTree Short EUR Long USD: Buy £2,000-3,000 (2-3% position)
 Rationale: Dollar safe-haven flows in global crisis
 Order: Place immediately for Thursday execution
 Caveat: Only if DXY is rallying (not if dollar weakness continues)
@@ -971,22 +1217,22 @@ Caveat: Only if DXY is rallying (not if dollar weakness continues)
 
 **TRIGGER CHECKS:**
 
-**DBC EXIT SIGNAL: ISM < 45** (severe contraction)
+**WISDOMTREE ENHANCED COMMODITY EXIT SIGNAL: ISM < 45** (severe contraction)
 ```
 IF ISM Manufacturing < 45:
 → Demand destruction warning for commodities
-→ If holding DBC: SELL 100% position
+→ If holding WisdomTree Enhanced Commodity: SELL 100% position
 → Order today for Friday execution
 → Rationale: Weak manufacturing = weak commodity demand
 ```
 
-**DBMF/KMLM OPPORTUNITY: ISM surprise**
+**iMGP/AQR OPPORTUNITY: ISM surprise**
 - If ISM beats by >2 points (e.g., expected 48, actual 51): Growth surprise
 - If ISM misses by >2 points: Recession fear
 - **Either creates trends** = good for managed futures
 
-**Current DBC Position Check:**
-- If you entered DBC on Nov 18 OPEC+ trigger: Now ~3 days old
+**Current WisdomTree Enhanced Commodity Position Check:**
+- If you entered on Nov 18 OPEC+ trigger: Now ~3 days old
 - Oil price current: $____
 - Is position profitable? Up/down ____%
 
@@ -996,7 +1242,7 @@ Services Index: ____ (typically more resilient, ~50-53)
 
 **If both ISM Manufacturing AND Services <48:**
 - Major recessionary signal
-- **DEPLOY CASH TO TLT**: Buy £3-5k (3-5% position)
+- **DEPLOY CASH TO iShares $ Treasury Bond 20+yr UCITS ETF**: Buy £3-5k (3-5% position)
 - Rationale: Recession = Fed cuts = bond rally
 
 **🎯 Prepare for Thanksgiving week** (next week = low liquidity)
@@ -1016,15 +1262,15 @@ Services Index: ____ (typically more resilient, ~50-53)
 - Half-day Friday (close 6:00 PM GMT)
 - **Low liquidity = erratic price moves**
 
-**VIXY Reduction for Holiday Week:**
+**Amundi VIX ETF Reduction for Holiday Week:**
 
-**Current VIXY position: ____%**
+**Current Amundi VIX ETF position: ____%**
 
 **Holiday Liquidity Adjustment:**
 ```
-IF VIXY > 3%:
+IF Amundi VIX ETF > 3%:
 → REDUCE to 2% for holiday week
-→ Rationale: Low liquidity can cause unpredictable VIXY moves
+→ Rationale: Low liquidity can cause unpredictable VIX moves
 → Contango decay accelerates in quiet markets
 → Re-add after Thanksgiving if needed
 → Order Monday morning for Tuesday execution
@@ -1044,18 +1290,18 @@ IF VIXY > 3%:
 
 **⏰ 2:00 PM GMT** - Thanksgiving week positioning
 
-**EXECUTE: VIXY holiday reduction** (if planned Friday)
-- Reduce VIXY from 3-4% to 2%
+**EXECUTE: Amundi VIX ETF holiday reduction** (if planned Friday)
+- Reduce Amundi VIX ETF from 3-4% to 2%
 - Trim exposure during low-liquidity period
 
 **📊 Pre-Holiday Portfolio Snapshot:**
-- DBMF: ____%
-- GLD/SGLN.L: ____%
-- KMLM: ____%
-- VIXY: 2% (reduced)
-- UUP: ____%
-- DBC: ____%
-- TLT: ____%
+- iMGP DBi Managed Futures: ____%
+- WisdomTree Physical Gold: ____%
+- AQR Managed Futures: ____%
+- Amundi VIX ETF: 2% (reduced)
+- WisdomTree Short EUR Long USD: ____%
+- WisdomTree Enhanced Commodity: ____%
+- iShares $ Treasury Bond 20+yr: ____%
 - Cash: ____%
 
 **🎯 Low-Activity Week:**
@@ -1072,8 +1318,8 @@ IF VIXY > 3%:
 **No major scheduled data**
 
 **📊 Check on longer-term positions:**
-- DBMF/KMLM: Performance since Oct 20: ____%
-- GLD: Performance since Oct 20: ____%
+- iMGP/AQR: Performance since Oct 20: ____%
+- WisdomTree Physical Gold: Performance since Oct 20: ____%
 - Did managed futures capture November volatility?
 
 ---
@@ -1126,13 +1372,13 @@ This is your **FINAL FULL WEEKEND before end-game**
    - Dec 10 CPI+FOMC = After competition but affects final week
 
 3. **Position optimization:**
-   - What to keep: DBMF, GLD, KMLM (core diversifiers)
-   - What to scale: VIXY (for Dec 5 NFP)
-   - What to exit: DBC/UUP/TLT (if not performing)
+   - What to keep: iMGP DBi Managed Futures, AQR Managed Futures, WisdomTree Physical Gold (core diversifiers)
+   - What to scale: Amundi VIX ETF (for Dec 5 NFP)
+   - What to exit: WisdomTree Enhanced Commodity/WisdomTree Short EUR Long USD/iShares Treasury 20+yr (if not performing)
 
 4. **End-game decisions:**
    - Will you take profits early or ride through Dec 5?
-   - VIXY strategy for Dec 5 NFP (last event)?
+   - Amundi VIX ETF strategy for Dec 5 NFP (last event)?
    - Final portfolio allocation target
 
 ---
@@ -1145,12 +1391,12 @@ This is your **FINAL FULL WEEKEND before end-game**
 
 Check result Sunday night/Monday morning:
 
-**DBC EXIT CONFIRMATION TRIGGER:**
+**WISDOMTREE ENHANCED COMMODITY EXIT CONFIRMATION TRIGGER:**
 ```
 IF China PMI < 48 for SECOND consecutive month:
 → China PMI in November was: ____
 → China PMI in December is: ____
-→ IF both <48: EXIT ALL DBC immediately
+→ IF both <48: EXIT ALL WisdomTree Enhanced Commodity UCITS ETF immediately
 → Rationale: Demand destruction confirmed
 → Order Monday for Tuesday execution
 ```
@@ -1171,13 +1417,13 @@ IF China PMI < 48 for SECOND consecutive month:
 
 **📊 Final Week Opening Positions:**
 Document everything:
-- DBMF: ____% (£____)
-- GLD/SGLN.L: ____% (£____)
-- KMLM: ____% (£____)
-- VIXY: ____% (£____)
-- UUP: ____% (£____)
-- DBC: ____% (£____)
-- TLT: ____% (£____)
+- iMGP DBi Managed Futures: ____% (£____)
+- WisdomTree Physical Gold: ____% (£____)
+- AQR Managed Futures: ____% (£____)
+- Amundi VIX ETF: ____% (£____)
+- WisdomTree Short EUR Long USD: ____% (£____)
+- WisdomTree Enhanced Commodity: ____% (£____)
+- iShares $ Treasury Bond 20+yr: ____% (£____)
 - Cash: ____% (£____)
 
 **Total portfolio value: £____**
@@ -1193,10 +1439,10 @@ If any position is down >5% and has no catalyst ahead:
 
 **2. CONCENTRATE INTO TOP PERFORMERS:**
 - Which positions have generated the best returns?
-- DBMF? KMLM? GLD?
+- iMGP DBi Managed Futures? AQR Managed Futures? WisdomTree Physical Gold?
 - Consider scaling winners by 1-2%
 
-**3. VIXY PRE-NFP POSITIONING:**
+**3. AMUNDI VIX ETF PRE-NFP POSITIONING:**
 Friday Dec 5 is NFP (jobs report) at 1:30 PM GMT
 - **This is your LAST MAJOR EVENT**
 - Must position by **WEDNESDAY DEC 3** (2 days before)
@@ -1206,32 +1452,32 @@ Friday Dec 5 is NFP (jobs report) at 1:30 PM GMT
 
 ### **TUESDAY, DECEMBER 2**
 
-**⏰ 2:00 PM GMT** - Verify Monday's DBC exit (if triggered by China PMI)
+**⏰ 2:00 PM GMT** - Verify Monday's WisdomTree Enhanced Commodity exit (if triggered by China PMI)
 
-**⏰ 7:00 PM GMT** - **CRITICAL DECISION DEADLINE FOR NFP VIXY TRADE**
+**⏰ 7:00 PM GMT** - **CRITICAL DECISION DEADLINE FOR NFP AMUNDI VIX ETF TRADE**
 
 **THIS IS YOUR LAST CHANCE TO POSITION FOR FRIDAY DEC 5 NFP**
 
-**VIXY End-Game Strategy:**
+**Amundi VIX ETF End-Game Strategy:**
 
 **Current VIX level at 7:00 PM GMT: ____**
 
 **Option 1: AGGRESSIVE (Recommended if VIX <17)**
 ```
-SCALE VIXY TO 5% BY END OF DAY TUESDAY
+SCALE Amundi S&P 500 VIX Futures Enhanced Roll UCITS ETF TO 5% BY END OF DAY TUESDAY
 Orders execute Wednesday = positioned for Thursday run-up + Friday NFP
 Rationale:
 - Dec 5 NFP is your last catalyst
 - VIX typically rises 1-2 days before NFP
 - Thursday orders execute Friday = you MISS the pre-NFP positioning
 - This is your last chance for a volatility home run
-Target: £5,000 in VIXY (5%)
+Target: £5,000 in Amundi VIX ETF (5%)
 CRITICAL: Must order by 8:30 PM GMT Tuesday for Wednesday execution
 ```
 
 **Option 2: MODERATE (if VIX 17-20)**
 ```
-SCALE VIXY TO 3-4%
+SCALE Amundi VIX ETF TO 3-4%
 More conservative NFP hedge
 Order Tuesday for Wednesday execution
 ```
@@ -1259,8 +1505,8 @@ Small hedge only
 - **Therefore: Tuesday is your true "last day" for strategic moves**
 
 **Document your end-game plan:**
-1. VIXY sizing for NFP: ____%
-2. Core holdings to ride through Friday: DBMF ___%, GLD ___%, KMLM ___%
+1. Amundi VIX ETF sizing for NFP: ____%
+2. Core holdings to ride through Friday: iMGP DBi Managed Futures ___%, WisdomTree Physical Gold ___%, AQR Managed Futures ___%
 3. Profit-taking threshold: If portfolio up __% by Thursday, sell winners?
 4. Risk management: Stop-loss on any position: ____%
 
@@ -1268,14 +1514,14 @@ Small hedge only
 
 ### **WEDNESDAY, DECEMBER 3**
 
-**⏰ 2:30 PM GMT** - Verify Tuesday's VIXY orders executed
+**⏰ 2:30 PM GMT** - Verify Tuesday's Amundi VIX ETF orders executed
 
 **📊 Pre-NFP Portfolio Check:**
 This should be close to your **FINAL portfolio allocation**:
-- DBMF: ____%
-- GLD: ____%
-- KMLM: ____%
-- VIXY: 3-5% ← Should be elevated for Friday NFP
+- iMGP DBi Managed Futures: ____%
+- WisdomTree Physical Gold: ____%
+- AQR Managed Futures: ____%
+- Amundi VIX ETF: 3-5% ← Should be elevated for Friday NFP
 - Others: ____%
 - Cash: ____%
 
@@ -1299,10 +1545,10 @@ After this deadline, you can only place Thursday orders (execute Friday = no tim
 **Friday NFP is at 1:30 PM GMT**
 - Consensus jobs expectation: ~150-180k
 - You CANNOT trade after the NFP release effectively (T+1 settlement)
-- Your VIXY position is your only NFP play
+- Your Amundi VIX ETF position is your only NFP play
 
 **Set alarms for Thursday:**
-- 2:30 PM GMT: Check VIXY pre-NFP positioning movement
+- 2:30 PM GMT: Check Amundi VIX ETF pre-NFP positioning movement
 - 7:00 PM GMT: Check if you want any final Thursday orders (execute Fri)
 
 **Critical Decision:**
@@ -1324,11 +1570,11 @@ After this deadline, you can only place Thursday orders (execute Friday = no tim
 - Performance since Oct 20: ____%
 - Unrealized gains/losses: ____
 
-**VIXY Pre-NFP Movement:**
-- VIXY price at 2:30 PM GMT: $____
+**Amundi VIX ETF Pre-NFP Movement:**
+- Amundi VIX ETF price at 2:30 PM GMT: ____
 - VIX level: ____
 - Historical pattern: VIX often rises Thursday before Friday NFP
-- **If VIXY up >20% from Tuesday entry:** Consider taking partial profits
+- **If Amundi VIX ETF up >20% from Tuesday entry:** Consider taking partial profits
 
 **⏰ 3:00 PM - 7:00 PM GMT** - **PROFIT-TAKING DECISION WINDOW**
 
@@ -1343,9 +1589,9 @@ IF you're ahead in competition (up >10% since Oct 20):
 → Orders execute Friday AM (before NFP impact)
 
 Example:
-- GLD up 6% since Oct 20? Sell 2% of your 8% position → Lock in gains
-- VIXY up 15% since Wednesday? Sell 50% → Keep half for NFP
-- DBMF up 8%? Hold → Let it run through Friday
+- WisdomTree Physical Gold up 6% since Oct 20? Sell 2% of your 8% position → Lock in gains
+- Amundi VIX ETF up 15% since Wednesday? Sell 50% → Keep half for NFP
+- iMGP DBi Managed Futures up 8%? Hold → Let it run through Friday
 ```
 
 **Option B: RIDE OR DIE (Aggressive)**
@@ -1353,7 +1599,7 @@ Example:
 IF you're behind in competition or want to maximize:
 → Hold ALL positions through Friday close
 → Maximize exposure to final day volatility
-→ VIXY could spike 30-50% on NFP surprise
+→ Amundi VIX ETF could spike 30-50% on NFP surprise
 → Risk: Could also lose on adverse moves
 ```
 
@@ -1361,14 +1607,14 @@ IF you're behind in competition or want to maximize:
 
 **Last chance decisions:**
 
-**1. VIXY Profit-Taking:**
+**1. Amundi VIX ETF Profit-Taking:**
 ```
-IF VIXY up >25% since Wednesday:
+IF Amundi VIX ETF up >25% since Wednesday:
 → Consider selling 50% to lock gains
 → Order by 8:30 PM GMT for Friday AM execution
 → Keeps half for NFP spike potential
 
-IF VIXY up >40%:
+IF Amundi VIX ETF up >40%:
 → Strongly consider selling 75%
 → Take profits, competition ends tomorrow
 ```
@@ -1383,8 +1629,8 @@ IF any position up >15% since Oct 20:
 **3. Final Rebalancing:**
 ```
 Review target allocation:
-- Core diversifiers (DBMF, KMLM, GLD): Should be ~25%
-- Tactical positions (VIXY, UUP, DBC, TLT): Should be ~5-10%
+- Core diversifiers (iMGP, AQR, WisdomTree Physical Gold): Should be ~25%
+- Tactical positions (Amundi VIX, WisdomTree Short EUR Long USD, WisdomTree Enhanced Commodity, iShares Treasury 20+yr): Should be ~5-10%
 - Cash: Should be ~5%
 ```
 
@@ -1393,8 +1639,8 @@ Review target allocation:
 **AFTER THIS TIME, YOU CANNOT PLACE ANY MORE ORDERS THAT MATTER**
 
 **Final Order Checklist:**
-- [ ] VIXY: Profit-taking orders placed? ____%
-- [ ] GLD: Trimming orders placed? ____%
+- [ ] Amundi VIX ETF: Profit-taking orders placed? ____%
+- [ ] WisdomTree Physical Gold: Trimming orders placed? ____%
 - [ ] Core holdings: Keeping or selling? ____
 - [ ] Cash level: Final target ____%
 
@@ -1414,7 +1660,7 @@ Review target allocation:
 1. Current portfolio value: £____
 2. Orders executing Friday morning: ____
 3. Expected Friday position: ____
-4. Best case scenario (NFP surprise + VIXY spike): £____
+4. Best case scenario (NFP surprise + Amundi VIX ETF spike): £____
 5. Worst case scenario: £____
 6. Most likely outcome: £____
 
@@ -1431,7 +1677,7 @@ Review target allocation:
 **⏰ Pre-Market (1:00 PM GMT)** - Verify Thursday's orders executed
 
 **Execution Check:**
-- VIXY profit-taking: Executed? At what price?
+- Amundi VIX ETF profit-taking: Executed? At what price?
 - Any trimming orders: Executed?
 - Final portfolio allocation matches plan?
 
@@ -1446,47 +1692,47 @@ Review target allocation:
 
 **Watch (but cannot trade effectively):**
 - VIX movement: ____
-- VIXY movement: ____
+- Amundi VIX ETF movement: ____
 - DXY movement: ____
-- Gold movement: ____
+- WisdomTree Physical Gold movement: ____
 - Equity market reaction: ____
 
-**VIXY Monitoring:**
-- VIXY at 1:30 PM GMT: $____
-- VIXY at 2:30 PM GMT: $____
-- VIXY high of day: $____
+**Amundi VIX ETF Monitoring:**
+- Amundi VIX ETF at 1:30 PM GMT: ____
+- Amundi VIX ETF at 2:30 PM GMT: ____
+- Amundi VIX ETF high of day: ____
 
 **Scenarios:**
 
 **Strong NFP (>200k jobs):**
 - VIX likely drops (risk-on)
-- VIXY down 10-20%
-- Dollar rallies (UUP up)
+- Amundi VIX ETF down 10-20%
+- Dollar rallies (WisdomTree Short EUR Long USD up)
 - Gold may weaken
-- **If you kept 100% VIXY:** Painful afternoon
+- **If you kept 100% Amundi VIX ETF:** Painful afternoon
 - **If you sold 50-75% Thursday:** Smart move
 
 **Weak NFP (<100k jobs):**
 - VIX likely spikes to 25-30
-- VIXY up 30-50%+
-- Dollar weakens (UUP down)
+- Amundi VIX ETF up 30-50%+
+- Dollar weakens (WisdomTree Short EUR Long USD down)
 - Gold rallies
-- **If you kept 100% VIXY:** Home run
+- **If you kept 100% Amundi VIX ETF:** Home run
 - **If you sold too much Thursday:** Missed upside
 
 **In-Line NFP (150-180k):**
 - VIX moderate move 18-22
-- VIXY up 10-20%
+- Amundi VIX ETF up 10-20%
 - Mixed reactions
 - Core diversifiers stable
 
 **⏰ 2:30 PM GMT** - **MARKET OPEN**
 
 **📊 Monitor your final positions:**
-- DBMF: Real-time price ____
-- SGLN.L: Real-time price ____
-- KMLM: Real-time price ____
-- VIXY: Real-time price ____
+- iMGP DBi Managed Futures: Real-time price ____
+- WisdomTree Physical Gold: Real-time price ____
+- AQR Managed Futures: Real-time price ____
+- Amundi VIX ETF: Real-time price ____
 - Others: ____
 
 **Calculate running P&L:**
@@ -1511,11 +1757,13 @@ Review target allocation:
 **FINAL PORTFOLIO VALUE: £____**
 
 **📊 Final Positions:**
-- DBMF: ____% → £____
-- GLD: ____% → £____
-- KMLM: ____% → £____
-- VIXY: ____% → £____
-- Others: ____% → £____
+- iMGP DBi Managed Futures: ____% → £____
+- WisdomTree Physical Gold: ____% → £____
+- AQR Managed Futures: ____% → £____
+- Amundi VIX ETF: ____% → £____
+- WisdomTree Short EUR Long USD: ____% → £____
+- WisdomTree Enhanced Commodity: ____% → £____
+- iShares $ Treasury Bond 20+yr: ____% → £____
 - Cash: ____% → £____
 
 **TOTAL RETURN: ____%**
@@ -1535,7 +1783,7 @@ Review target allocation:
 - Mistakes made: ____
 
 **Lessons learned:**
-1. VIXY timing: ____
+1. Amundi VIX ETF timing: ____
 2. Managed futures role: ____
 3. Gold as diversifier: ____
 4. T+1 settlement impact: ____
@@ -1565,119 +1813,11 @@ Review target allocation:
 
 **This is the "double-catalyst" day your documents warned about**
 
-If you kept VIXY positions through Friday close, this is the event they were positioned for. But competition is over.
+If you kept Amundi VIX ETF positions through Friday close, this is the event they were positioned for. But competition is over.
 
 **Historical Note:**
 - Your documents called this "EXTREME volatility opportunity"
-- "Maximize VIXY hedge" was the recommendation
-- But with Dec 5 competition end, you likely exited most VIXY
+- "Maximize VIXY hedge" was the recommendation (Amundi VIX ETF for you)
+- But with Dec 5 competition end, you likely exited most Amundi VIX ETF
 
 ---
-
-## **MASTER TRIGGER REFERENCE CARD**
-
-**Print this and keep it visible:**
-
-### **VIXY Rules (Most Important)**
-```
-BUY TRIGGERS:
-• VIX < 16 with major event <10 days → Enter at 3-5%
-• VIX < 14 → Maximum 5%
-
-SELL TRIGGERS (NON-NEGOTIABLE):
-• VIX > 30 → EXIT 100% IMMEDIATELY
-• VIXY gain > 40% → EXIT 100%
-• VIX > 25 AND event passed → EXIT 75%
-
-HOLD PERIOD:
-• Maximum 2-3 days before events
-• Exit immediately after event
-• Never hold >1 week (contango decay)
-```
-
-### **GLD Rules**
-```
-BUY TRIGGERS:
-• CPI >3.0% YoY AND DXY drops >1% → Scale to 10%
-• Real yields negative (10Y < CPI) → Scale to 10%
-• Geopolitical escalation + gold up >2% → Scale to 10%
-
-SELL TRIGGERS:
-• Fed turns very dovish (>50bps cuts) → Reduce to 6%
-• DXY rallies >2% sustained → Reduce to 6%
-```
-
-### **DBC Rules**
-```
-BUY TRIGGERS:
-• OPEC+ cuts >500k b/d → Deploy 4%
-• WTI oil >$85 sustained 2 days → Deploy 4%
-
-SELL TRIGGERS:
-• China PMI <48 for 2 consecutive months → EXIT 100%
-• ISM Manufacturing <45 → EXIT 100%
-• WTI oil <$80 → EXIT 100%
-```
-
-### **UUP Rules**
-```
-BUY TRIGGERS:
-• NFP >200k jobs AND DXY rallies → Add 4%
-• Fed hawkish surprise → Add 4%
-• Geopolitical shock + DXY rally → Add 2-3%
-• DXY breaks >100 → Add 4%
-
-SELL TRIGGERS:
-• Fed confirms dovish cuts → EXIT 100%
-• DXY breaks <96 → EXIT 100%
-```
-
-### **DBMF/KMLM Rules**
-```
-BUY TRIGGERS:
-• CPI surprise >0.4% MoM → Scale KMLM to 9%
-• Core PCE >2.8% → Scale DBMF to 12%
-• S&P 500 drawdown >4% in 3 days → Scale DBMF to 12%
-• VIX spike >22 → Scale DBMF to 12%
-
-SELL TRIGGERS:
-• Stop-loss at -8% from peak (rarely used)
-• Competition end (hold through Dec 5)
-```
-
----
-
-## **CRITICAL REMINDERS**
-
-1. **T+1 Settlement**: Orders placed today execute tomorrow
-   - Last meaningful order day: **Thursday Dec 4**
-   - Friday Dec 5: Can only watch
-
-2. **VIXY Discipline**: 
-   - VIX >30 = EXIT immediately
-   - Gain >40% = EXIT immediately
-   - Never hold >3-5 days
-   - Only position 2-3 days before events
-
-3. **Major Events (UK Time)**:
-   - Oct 24: CPI (1:30 PM BST - position Oct 22)
-   - Oct 28-29: FOMC (7:00 PM GMT - position Oct 25)
-   - Nov 13: CPI (1:30 PM GMT - position Nov 10)
-   - Dec 5: NFP (1:30 PM GMT - position Dec 2-3)
-
-4. **DXY Measurement**:
-   - "Drops >1%" = 10:00 PM GMT close to 10:00 PM GMT close
-   - Example: 98.0 → 97.0 = 1.02% drop = TRIGGER
-
-5. **Portfolio Rebalancing**:
-   - Monday mornings: Weekly review
-   - Before major events: 2-3 days ahead
-   - After major events: Next trading day
-
-6. **Profit-Taking**:
-   - VIXY: At 40% gains or VIX >30
-   - Other positions: Consider at +15-20%
-   - End-game: Thursday Dec 4 is last chance
-
----
-

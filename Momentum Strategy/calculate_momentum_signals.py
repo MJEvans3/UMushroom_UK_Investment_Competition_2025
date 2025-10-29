@@ -14,7 +14,8 @@ from datetime import datetime, timedelta
 # Best for 7-week competition: 9.3% avg return, 3.27 Sharpe, 2.44 consistency (Rank #4)
 MOMENTUM_PERIOD = 14  # Optimal: 14 days
 NUM_TOP_STOCKS = 0.3  # Top 30% (15 stocks) - best risk-adjusted returns
-PORTFOLIO_VALUE = 60000  # £60k
+TOTAL_PORTFOLIO = 100000  # £100k total portfolio
+TARGET_ALLOCATION = 0.65  # Allocate 65% of portfolio (£65k)
 REBALANCE_FREQUENCY = 4  # Rebalance every 4 trading days
 
 # Top 50 S&P 500 stocks by market cap (as of 2024)
@@ -70,23 +71,42 @@ def get_current_momentum_signals():
     print("=" * 80)
     print("MOMENTUM STRATEGY SIGNAL GENERATOR")
     print("=" * 80)
-    print(f"Portfolio Value: £{PORTFOLIO_VALUE:,.2f}")
+    print(f"Total Portfolio: £{TOTAL_PORTFOLIO:,.2f}")
+    print(f"Target Allocation: {TARGET_ALLOCATION:.0%} (£{TOTAL_PORTFOLIO * TARGET_ALLOCATION:,.2f})")
     print(f"Momentum Period: {MOMENTUM_PERIOD} days")
     print(f"Stock Universe: Top 50 S&P 500")
     print(f"Selection: Top {int(NUM_TOP_STOCKS * 100)}%")
     print("=" * 80)
     print()
 
+    # Get USD/GBP exchange rate
+    print("Fetching USD/GBP exchange rate...")
+    try:
+        fx = yf.Ticker("GBPUSD=X")
+        fx_data = fx.history(period="1d")
+        if fx_data.empty:
+            raise ValueError("No exchange rate data available")
+        gbp_usd_rate = fx_data['Close'].iloc[-1]  # GBP to USD rate
+        usd_gbp_rate = 1 / gbp_usd_rate  # USD to GBP rate
+        print(f"Exchange Rate: 1 USD = £{usd_gbp_rate:.4f} GBP (1 GBP = ${gbp_usd_rate:.4f} USD)")
+        print()
+    except Exception as e:
+        print(f"Error fetching exchange rate: {e}")
+        print("Using fallback rate of 1 USD = £0.80 GBP")
+        usd_gbp_rate = 0.80
+        print()
+
     # Download data for all stocks
     # Need MOMENTUM_PERIOD + buffer for calculation
-    end_date = datetime(2025, 10, 17)
+    end_date = datetime.today()
     start_date = end_date - timedelta(days=MOMENTUM_PERIOD + 10)  # Extra days for weekends
 
     print(f"Downloading data from {start_date.date()} to {end_date.date()}...")
     print()
 
     momentum_scores = {}
-    current_prices = {}
+    current_prices_usd = {}
+    current_prices_gbp = {}
     failed_tickers = []
 
     for ticker in TOP_50_SP500:
@@ -102,15 +122,17 @@ def get_current_momentum_signals():
 
             # Get closing prices
             prices = df['Close'].values
-            current_price = prices[-1]
+            current_price_usd = prices[-1]
+            current_price_gbp = current_price_usd * usd_gbp_rate
 
             # Calculate momentum score
             score = calculate_momentum_score(prices)
 
             if not np.isnan(score):
                 momentum_scores[ticker] = score
-                current_prices[ticker] = current_price
-                print(f"✓ {ticker}: Score = {score:.4f}, Price = ${current_price:.2f}")
+                current_prices_usd[ticker] = current_price_usd
+                current_prices_gbp[ticker] = current_price_gbp
+                print(f"✓ {ticker}: Score = {score:.4f}, Price = ${current_price_usd:.2f} (£{current_price_gbp:.2f})")
             else:
                 print(f"⚠️  {ticker}: Invalid momentum score")
                 failed_tickers.append(ticker)
@@ -134,8 +156,9 @@ def get_current_momentum_signals():
     num_to_select = int(np.ceil(num_stocks * NUM_TOP_STOCKS))
     selected_stocks = ranked_stocks[:num_to_select]
 
-    # Calculate position sizes
-    allocation_per_stock = PORTFOLIO_VALUE / num_to_select
+    # Calculate position sizes (each stock gets equal weight of the target allocation)
+    allocation_per_stock = (TOTAL_PORTFOLIO * TARGET_ALLOCATION) / num_to_select
+    weight_per_stock = (TARGET_ALLOCATION / num_to_select) * 100  # As percentage of total portfolio
 
     print(f"MOMENTUM RANKINGS (Top {num_to_select} of {num_stocks} stocks)")
     print("=" * 80)
@@ -145,9 +168,10 @@ def get_current_momentum_signals():
     print("Full Rankings:")
     print("-" * 80)
     for rank, (ticker, score) in enumerate(ranked_stocks, 1):
-        price = current_prices[ticker]
+        price_usd = current_prices_usd[ticker]
+        price_gbp = current_prices_gbp[ticker]
         selected = ">>> BUY <<<" if rank <= num_to_select else ""
-        print(f"{rank:2d}. {ticker:6s} | Score: {score:8.4f} | Price: ${price:8.2f} {selected}")
+        print(f"{rank:2d}. {ticker:6s} | Score: {score:8.4f} | Price: ${price_usd:8.2f} (£{price_gbp:6.2f}) {selected}")
 
     print()
     print("=" * 80)
@@ -157,24 +181,37 @@ def get_current_momentum_signals():
 
     total_allocation = 0
 
+    import math
+
+    shares_to_buy_list = []
+    allocations_list = []
+
     for rank, (ticker, score) in enumerate(selected_stocks, 1):
-        price = current_prices[ticker]
-        shares = int(allocation_per_stock / price)
-        actual_allocation = shares * price
-        weight = (actual_allocation / PORTFOLIO_VALUE) * 100
-        total_allocation += actual_allocation
+        price_usd = current_prices_usd[ticker]
+        price_gbp = current_prices_gbp[ticker]
+        # Calculate shares based on GBP price (max 2 decimal places, round down)
+        shares = math.floor((allocation_per_stock / price_gbp) * 100) / 100
+        actual_allocation_gbp = shares * price_gbp  # Actual cost of shares in GBP
+        actual_allocation_usd = shares * price_usd  # Actual cost in USD for reference
+        weight = (actual_allocation_gbp / TOTAL_PORTFOLIO) * 100  # Weight as % of total portfolio
+        total_allocation += actual_allocation_gbp
+
+        shares_to_buy_list.append(shares)
+        allocations_list.append(actual_allocation_gbp)
 
         print(f"{rank}. {ticker}")
         print(f"   Momentum Score: {score:.4f}")
-        print(f"   Current Price:  ${price:.2f}")
-        print(f"   Target Amount:  £{allocation_per_stock:,.2f}")
-        print(f"   Shares to Buy:  {shares:,}")
-        print(f"   Actual Cost:    £{actual_allocation:,.2f} ({weight:.1f}%)")
+        print(f"   Current Price:  ${price_usd:.2f} (£{price_gbp:.2f})")
+        print(f"   Target Amount:  £{allocation_per_stock:,.2f} ({weight_per_stock:.2f}% of portfolio)")
+        print(f"   Shares to Buy:  {shares:,.2f}")
+        print(f"   Actual Cost:    £{actual_allocation_gbp:,.2f} (${actual_allocation_usd:,.2f}) - {weight:.2f}% of portfolio")
         print()
 
     print("=" * 80)
-    print(f"TOTAL ALLOCATION: £{total_allocation:,.2f} / £{PORTFOLIO_VALUE:,.2f}")
-    print(f"CASH REMAINING:   £{PORTFOLIO_VALUE - total_allocation:,.2f}")
+    target_amount = TOTAL_PORTFOLIO * TARGET_ALLOCATION
+    allocation_pct = (total_allocation / TOTAL_PORTFOLIO) * 100
+    print(f"TOTAL ALLOCATION: £{total_allocation:,.2f} / £{target_amount:,.2f} target ({allocation_pct:.2f}% of portfolio)")
+    print(f"CASH REMAINING:   £{TOTAL_PORTFOLIO - total_allocation:,.2f} ({(1 - total_allocation/TOTAL_PORTFOLIO)*100:.2f}% of portfolio)")
     print("=" * 80)
     print()
 
@@ -183,9 +220,11 @@ def get_current_momentum_signals():
         'Rank': range(1, len(selected_stocks) + 1),
         'Ticker': [t for t, _ in selected_stocks],
         'Momentum_Score': [s for _, s in selected_stocks],
-        'Current_Price': [current_prices[t] for t, _ in selected_stocks],
-        'Shares_to_Buy': [int(allocation_per_stock / current_prices[t]) for t, _ in selected_stocks],
-        'Allocation': [int(allocation_per_stock / current_prices[t]) * current_prices[t] for t, _ in selected_stocks]
+        'Price_USD': [current_prices_usd[t] for t, _ in selected_stocks],
+        'Price_GBP': [current_prices_gbp[t] for t, _ in selected_stocks],
+        'Shares_to_Buy': shares_to_buy_list,
+        'Allocation_GBP': allocations_list,
+        'Weight_Pct': [(a / TOTAL_PORTFOLIO) * 100 for a in allocations_list]
     })
 
     filename = f"momentum_signals_{datetime.now().strftime('%Y%m%d_%H%M%S')}.csv"
@@ -196,7 +235,7 @@ def get_current_momentum_signals():
     if failed_tickers:
         print("⚠️  Failed tickers:", ", ".join(failed_tickers))
 
-    return selected_stocks, current_prices
+    return selected_stocks, current_prices_usd, current_prices_gbp, usd_gbp_rate
 
 if __name__ == "__main__":
     get_current_momentum_signals()

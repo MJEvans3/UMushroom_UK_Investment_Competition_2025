@@ -10,7 +10,7 @@
 
 | Strategy | Allocation | Approach | Rebalancing | Folder |
 |----------|------------|----------|-------------|--------|
-| **Momentum** | **65%** (£65k) | Systematic quant | Every 4 days | `momentum_strategy/` |
+| **Momentum** | **65%** (£65k) | Systematic momentum | Every 4 days | `momentum_strategy/` |
 | **Tactical** | **35%** (£35k) | Event-driven discretionary | Daily monitoring | `tactical_strategy/` |
 
 ---
